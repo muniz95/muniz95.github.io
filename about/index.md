@@ -32,6 +32,6 @@ See a [live version of Moon](http://muniz95.github.io/Moon) hosted on GitHub.
 
 ## Getting Started
 
-To learn how to install and use this theme check out the [Setup Guide](http://muniz95.me/Moon/moon-theme/) for more information.
+To learn how to install and use this theme check out the [Setup Guide](http://muniz95.tk/Moon/moon-theme/) for more information.
       
 [Install Moon](https://github.com/muniz95/Moon){: .btn}
