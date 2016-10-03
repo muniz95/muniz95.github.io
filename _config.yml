@@ -8,6 +8,8 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
+languages:          ["pt_BR", "en", "eo"]
+exclude_from_localizations: ["assets"]
 url:                http://muniz95.tk
 
 # Jekyll
@@ -38,9 +40,9 @@ disqus_shortname:   muniz95
   #ad-slot:
 #bing-verify:
 #email:
-twitter:            username
-facebook:           username
-github:             username
+twitter:            muniz95
+facebook:           muniz95
+github:             muniz95
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
