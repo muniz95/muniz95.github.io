@@ -76,7 +76,7 @@ Used to generate absolute urls in `sitemap.xml`, `feed.xml`, and for generating 
 Examples:
 
 {% highlight yaml %}
-url: http://muniz95.tk/Moon
+url: http://muniz95.tk
 url: http://localhost:4000
 url: //cooldude.github.io
 url:
@@ -122,7 +122,7 @@ To set what links appear in the top navigation edit `_data/navigation.yml`. Use 
   url: /about/
 
 - title: Moon
-  url: http://muniz95.tk/Moon
+  url: http://muniz95.tk
 {% endhighlight %}
 
 ---

@@ -25,4 +25,4 @@ See a [live version of Moon](http://muniz95.github.io/Moon) hosted on GitHub.
 
 ## Getting Started
 
-To learn how to install and use this theme check out the [Setup Guide](http://muniz95.tk/Moon/moon-theme/) for more information.
+To learn how to install and use this theme check out the [Setup Guide](http://muniz95.tk/moon-theme/) for more information.
