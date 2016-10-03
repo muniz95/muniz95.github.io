@@ -1,5 +1,5 @@
 # Site
-title:              Moon
+title:              Muniz
 bio:                'Minimal, one column jekyll theme.'
 description:        "Moon is a minimal, one column jekyll theme for your blog."
 reading_time:       true
@@ -40,27 +40,27 @@ disqus_shortname:   muniz95
   #ad-slot:
 #bing-verify:
 #email:
-twitter:            muniz95
-facebook:           muniz95
+# twitter:            muniz95
+# facebook:           muniz95
 github:             muniz95
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-instagram:          username
-#lastfm:            username
-#tumblr:            username
-#pinterest:         username
-#foursquare:        username
-steam:              username
-#dribbble:          username
-#youtube:           username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
+# stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin:          muniz95
+# xing:              username
+# instagram:          username
+# lastfm:            username
+# tumblr:            username
+# pinterest:         username
+# foursquare:        username
+# steam:              username
+# dribbble:          username
+# youtube:           username
+# soundcloud:        username
+# weibo:             username
+# flickr:            username
+# codepen:           username
+# keybase:           username
+# xmpp:              username@server.com
+# hackernews:        username
 
 # Gems
 gems:
