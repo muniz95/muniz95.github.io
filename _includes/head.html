@@ -47,12 +47,12 @@
     <!-- Background Image -->
     {% if site.background %}
     {% capture background %}{{ site.background }}{% endcapture %}
-    {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ background | prepend: site.baseurl_root }}{% endcapture %}{% endunless %}
+    {% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url }}/{{ site.background }}{% endcapture %}{% endunless %}
     <style type="text/css">body {background-image:url({{ background }}); {% unless site.tiled_bg %} background-repeat: no-repeat; background-size: cover; {% endunless %}}</style>
     {% endif %}
     <!-- Post Feature Image -->
     {% if page.feature %}
     {% capture feature %}{{ page.feature }}{% endcapture %}
-    {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ feature | prepend: site.baseurl_root }}{% endcapture %}{% endunless %}
+    {% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ page.feature | prepend: site.baseurl_root }}{% endcapture %}{% endunless %}
     <style type="text/css">.feature {background-image:url({{ feature }});}</style>
     {% endif %}
