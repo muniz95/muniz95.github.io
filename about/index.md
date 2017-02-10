@@ -1,8 +1,7 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: Quem sou eu
+date: 2017-02-10
 comments: false
 ---
     
