@@ -1,16 +1,13 @@
 # Site
-title:              Muniz
+title:              "Rodrigo Muniz"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             pt_BR
-languages:          ["pt_BR", "en", "eo"]
-exclude_from_localizations: ["javascript", "images", "css"]
 url:                http://muniz95.tk
-description:        "Moon is a minimal, one column jekyll theme for your blog."
-bio:                'Just another developer.'
+description:        "Portfólio de Rodrigo Muniz."
+bio:                'Desenvolvedor Ruby / Node / .NET.'
 
 # Jekyll
 permalink:          /:title/
