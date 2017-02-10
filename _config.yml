@@ -1,15 +1,13 @@
 # Site
 title:              Muniz
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
+locale:             pt_BR
 languages:          ["pt_BR", "en", "eo"]
-exclude_from_localizations: ["assets"]
+exclude_from_localizations: ["javascript", "images", "css"]
 url:                http://muniz95.tk
 
 # Jekyll
@@ -68,6 +66,7 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-multiple-languages-plugin
 
 jekyll-mentions:
     base_url: https://github.com
