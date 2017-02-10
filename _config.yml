@@ -10,6 +10,7 @@ languages:          ["pt_BR", "en", "eo"]
 exclude_from_localizations: ["javascript", "images", "css"]
 url:                http://muniz95.tk
 description:        "Moon is a minimal, one column jekyll theme for your blog."
+bio:                'Just another developer.'
 
 # Jekyll
 permalink:          /:title/
