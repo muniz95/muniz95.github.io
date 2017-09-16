@@ -3,11 +3,11 @@ title:              "Rodrigo Muniz"
 reading_time:       true
 words_per_minute:   200
 logo:               '/assets/img/logo.png'
-background:         '/assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-url:                http://muniz95.tk
-description:        "Portfólio de Rodrigo Muniz."
-bio:                'Desenvolvedor Ruby / Node / .NET.'
+url:                https://muniz95.github.io
+baseurl:            /
+description:        "Rodrigo Muniz's Portfolio."
+bio:                'Ruby / NodeJS / .NET Developer.'
 
 # Jekyll
 permalink:          /:title/
@@ -60,11 +60,12 @@ linkedin:          muniz95
 # hackernews:        username
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-watch
 
 jekyll-mentions:
     base_url: https://github.com
