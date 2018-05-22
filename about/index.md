@@ -1,14 +1,11 @@
 ---
 layout: page
-title: Quem sou eu
+title: About me
 date: 2017-02-10
 comments: false
 ---
     
-## Profissionalmente
-* Atuante com desenvolvimento de sistemas desde 2011
-* Forte conhecimento e vivência com back-end
-* Experiente com problemas complexos e de alto impacto
-* Conhecimento razoável com front-end
-* Entusiasta de novas tecnologias e padrões
-* Uma pessoa quieta, calma e concentrada
+## Facts about me
+* Systems developer since 2011
+* I see myself as a fullstack developer (65% backend, 35% frontend)
+* Curious, creactive and self-taught

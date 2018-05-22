@@ -7,7 +7,7 @@ tiled_bg:           false   # Set this true if you want to tile your background 
 url:                https://muniz95.github.io
 baseurl:            /
 description:        "Rodrigo Muniz's Portfolio."
-bio:                'Ruby / NodeJS / .NET Developer.'
+bio:                'Fullstack (Java|Type)script / Dart Developer.'
 
 # Jekyll
 permalink:          /:title/
