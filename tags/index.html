@@ -21,7 +21,11 @@ comments: false
 	<h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
 		<ul>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
+      {% if post.project %}
+      <li class="entry-title"><a href="{{ post.repo }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% else %}
       <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      {% endif %}
     {% endif %}{% endfor %}
 		</ul>
 	</article><!-- /.hentry -->
