@@ -10,6 +10,7 @@ tag:
 - test
 - jekyll
 comments: true
+public: false
 ---
 
 ## HTML Elements
