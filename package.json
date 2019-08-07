@@ -53,6 +53,7 @@
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
+    "gh-pages": "2.0.1",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -67,7 +68,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public -b master"
   },
   "repository": {
     "type": "git",
