@@ -24,7 +24,7 @@ export default props => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={`https://willianjusten.com.br${post.frontmatter.image}`}
+        image={`https://muniz95.github.io${post.frontmatter.image}`}
       />
       <PostHeader>
         <PostDate>
@@ -51,7 +51,6 @@ export const query = graphql`
       }
       frontmatter {
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-        image
         description
         title
       }

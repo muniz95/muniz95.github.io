@@ -7,14 +7,14 @@ const links = [
     label: 'Sobre Mim',
     url: '/about/'
   },
-  {
-    label: 'Cursos',
-    url: '/cursos/'
-  },
-  {
-    label: 'Séries',
-    url: '/series/'
-  }
+  // {
+  //   label: 'Cursos',
+  //   url: '/cursos/'
+  // },
+  // {
+  //   label: 'Séries',
+  //   url: '/series/'
+  // }
 ]
 
 export default links

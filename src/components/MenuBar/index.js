@@ -4,7 +4,6 @@ import { Home } from 'styled-icons/boxicons-solid/Home'
 import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2'
 import { UpArrowAlt as Arrow } from 'styled-icons/boxicons-regular/UpArrowAlt'
 import { LightbulbOutline as Light } from 'styled-icons/material/LightbulbOutline'
-import { GraduationCap } from 'styled-icons/fa-solid/GraduationCap'
 import { ThList } from 'styled-icons/typicons/ThList'
 import { Grid } from 'styled-icons/boxicons-solid/Grid'
 
@@ -58,19 +57,6 @@ const MenuBar = () => {
         >
           <S.MenuBarItem onClick={() => GA.searchClickTrack()}>
             <Search />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
-        <S.MenuBarLink
-          to="/cursos/"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          title="Cursos"
-          activeClassName="active"
-        >
-          <S.MenuBarItem onClick={() => GA.courseClickTrack()}>
-            <GraduationCap />
-            <S.MenuBarNotification />
           </S.MenuBarItem>
         </S.MenuBarLink>
       </S.MenuBarGroup>

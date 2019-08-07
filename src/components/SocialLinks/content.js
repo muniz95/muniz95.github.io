@@ -1,23 +1,15 @@
 const links = [
   {
     label: 'Github',
-    url: 'https://github.com/willianjusten'
+    url: 'https://github.com/muniz95'
   },
   {
     label: 'Twitter',
-    url: 'https://twitter.com/Willian_justen'
+    url: 'https://twitter.com/muniz95'
   },
   {
-    label: 'Youtube',
-    url: 'https://www.youtube.com/WillianJustenCursos'
-  },
-  {
-    label: 'Instagram',
-    url: 'https://www.instagram.com/will_justen/'
-  },
-  {
-    label: 'Unsplash',
-    url: 'https://unsplash.com/@willianjusten'
+    label: 'Linkedin',
+    url: 'https://br.linkedin.com/in/muniz95'
   }
 ]
 

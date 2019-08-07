@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, title, image }) {
   const metaDescription = description || site.siteMetadata.description
 
   const ogImage =
-    image || 'https://willianjusten.com.br/assets/img/blog-image.png'
+    image || 'https://muniz95.github.io/assets/img/blog-image.png'
 
   return (
     <Helmet
@@ -40,7 +40,7 @@ function SEO({ description, lang, meta, title, image }) {
       meta={[
         {
           name: `aplication-name`,
-          content: 'Willian Justen Blog'
+          content: 'muniz95 blog'
         },
         {
           name: `description`,
@@ -91,7 +91,7 @@ SEO.defaultProps = {
   lang: `pt-br`,
   meta: [],
   description: ``,
-  defaultImage: 'https://willianjusten.com.br/assets/img/blog-image.png'
+  defaultImage: 'https://muniz95.github.io/assets/img/blog-image.png'
 }
 
 SEO.propTypes = {

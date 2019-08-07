@@ -37,7 +37,7 @@ const SeriesPage = props => {
       <SEO
         title="Series"
         description="Aqui ficarão as series em que iremos abordar sobre determinados assuntos."
-        image="https://willianjusten.com.br/assets/img/series.png"
+        image="https://muniz95.github.io/assets/img/series.png"
       />
       {categories.map((category, i) => (
         <section key={i}>
@@ -75,7 +75,6 @@ export const PostListQuery = graphql`
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             title
             description
-            categories
           }
         }
       }

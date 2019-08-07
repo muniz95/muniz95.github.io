@@ -59,13 +59,12 @@ const pluginConfig = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Willian Justen Blog`,
-      short_name: `WJusten`,
+      name: `muniz95 blog`,
+      short_name: `muniz95`,
       start_url: `/`,
       background_color: `#1C2938`,
       theme_color: `#1C2938`,
-      display: `minimal-ui`,
-      icon: `static/assets/img/willianjusten-icon.png`
+      display: `minimal-ui`
     }
   },
   `gatsby-plugin-styled-components`,
@@ -132,7 +131,7 @@ const pluginConfig = [
             }
           `,
           output: '/feed.xml',
-          title: 'Willian Justen Blog - RSS Feed'
+          title: 'muniz95 blog - RSS Feed'
         }
       ]
     }
