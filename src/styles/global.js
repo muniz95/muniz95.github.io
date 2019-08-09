@@ -65,11 +65,11 @@ const GlobalStyles = createGlobalStyle`
 
   body.dark {
     --borders: #38444d;
-    --texts: #8899a6;
+    --texts: #ffffff;
     --postColor: #fff;
-    --highlight: #1fa1f2;
-    --mediumBackground: #192734;
-    --background: #16202c;
+    --highlight: #f2e21f;
+    --mediumBackground: #18191b;
+    --background: #090e09;
     --white: #fff;
     --black: #222;
   }
@@ -78,7 +78,7 @@ const GlobalStyles = createGlobalStyle`
     --borders: #dedede;
     --postColor: #111;
     --texts: #555555;
-    --highlight: #1fa1f2;
+    --highlight: #0066e4;
     --mediumBackground: #f0f0f3;
     --background: #fff;
     --white: #fff;
