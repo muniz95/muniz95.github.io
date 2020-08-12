@@ -59,7 +59,7 @@ const pluginConfig = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `muniz95 blog`,
+      name: `Rodrigo Muniz`,
       short_name: `muniz95`,
       start_url: `/`,
       background_color: `#1C2938`,
