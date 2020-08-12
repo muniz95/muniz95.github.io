@@ -1,17 +1,17 @@
 import React from 'react'
 import propTypes from 'prop-types'
-import ReactGA from 'react-ga'
+// import ReactGA from 'react-ga'
 
 import * as S from './styled'
 
 import getThemeColor from '../../utils/getThemeColor'
 
 const RecommendedClickTrack = () => {
-  ReactGA.event({
-    category: 'menu link',
-    action: 'click',
-    label: 'Clicou num recommended link'
-  })
+  // ReactGA.event({
+  //   category: 'menu link',
+  //   action: 'click',
+  //   label: 'Clicou num recommended link'
+  // })
 }
 
 const RecommendedPosts = ({ next, previous }) => (

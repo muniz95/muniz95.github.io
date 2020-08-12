@@ -152,16 +152,7 @@ if (process.env.CONTEXT === 'production') {
     }
   }
 
-  const analytics = {
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      head: false
-    }
-  }
-
   pluginConfig.push(algolia)
-  pluginConfig.push(analytics)
 }
 
 module.exports = {
@@ -169,7 +160,7 @@ module.exports = {
     title: `Rodrigo Muniz`,
     position: 'Desenvolvedor Fullstack',
     description: `Um blog sobre um pouco de tudo: programação, desenvolvimento web, mobile, ideias aleatórias e bobagens em geral.`,
-    authorDescription: `Desenvolvedor fullstack na Editora Positivo, falo muita besteira e, por vezes, algo útil também.`,
+    authorDescription: `Desenvolvedor fullstack durante o dia, e durante a noite também às vezes.`,
     author: `@muniz95`,
     siteUrl: 'https://muniz95.github.io'
   },
