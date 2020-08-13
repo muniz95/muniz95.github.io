@@ -64,6 +64,7 @@ const pluginConfig = [
       start_url: `/`,
       background_color: `#1C2938`,
       theme_color: `#1C2938`,
+      icon: `src/images/icon.png`,
       display: `minimal-ui`
     }
   },
@@ -162,7 +163,7 @@ module.exports = {
     description: `Um blog sobre um pouco de tudo: programação, desenvolvimento web, mobile, ideias aleatórias e bobagens em geral.`,
     authorDescription: `Desenvolvedor fullstack durante o dia, e durante a noite também às vezes.`,
     author: `@muniz95`,
-    siteUrl: 'https://muniz95.github.io'
+    siteUrl: 'https://muniz95.com.br'
   },
   plugins: pluginConfig
 }

@@ -21,7 +21,7 @@ const CursosPage = () => (
     <SEO
       title="Cursos"
       description="Aprenda as mais diversas tecnologias em cursos separados em pequenos e completos módulos."
-      image="https://muniz95.github.io/assets/img/cursos/cursos-bg.png"
+      image="https://muniz95.com.br/assets/img/cursos/cursos-bg.png"
     />
     <S.ListWrapper>
       {coursesList.map(({ title, description, link, image }, i) => (

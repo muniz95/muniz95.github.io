@@ -2,7 +2,7 @@ backend:
   name: github
   repo: muniz95/muniz95.github.io
   branch: master
-  site_domain: muniz95.github.io
+  site_domain: muniz95.com.br
 
 media_folder: static/assets/img
 public_folder: assets/img

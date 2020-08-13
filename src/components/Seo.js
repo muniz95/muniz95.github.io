@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, title, image }) {
   const metaDescription = description || site.siteMetadata.description
 
   const ogImage =
-    image || 'https://muniz95.github.io/assets/img/blog-image.png'
+    image || 'https://muniz95.com.br/assets/img/blog-image.png'
 
   return (
     <Helmet
@@ -91,7 +91,7 @@ SEO.defaultProps = {
   lang: `pt-br`,
   meta: [],
   description: ``,
-  defaultImage: 'https://muniz95.github.io/assets/img/blog-image.png'
+  defaultImage: 'https://muniz95.com.br/assets/img/blog-image.png'
 }
 
 SEO.propTypes = {

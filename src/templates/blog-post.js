@@ -24,7 +24,7 @@ export default props => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={`https://muniz95.github.io${post.frontmatter.image}`}
+        image={`https://muniz95.com.br${post.frontmatter.image}`}
       />
       <PostHeader>
         <PostDate>
