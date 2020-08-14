@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// import Avatar from '../Avatar'
+import Avatar from '../Avatar'
 import * as S from './styled'
 
 import getThemeColor from '../../utils/getThemeColor'
 
-const Profile = ({ title, position, authorDescription }) => {
+const Profile = ({ title, position, authorDescription, isMobileHeader }) => {
   return (
-    <S.ProfileContainer>
+    <S.ProfileContainer isMobileHeader={isMobileHeader}>
       <S.ProfileLink
         to="/"
         cover
@@ -16,7 +16,7 @@ const Profile = ({ title, position, authorDescription }) => {
         bg={getThemeColor()}
         duration={0.6}
       >
-        {/* <Avatar /> */}
+        <Avatar />
         <S.ProfileAuthor>
           {title}
           <S.ProfilePosition>{position}</S.ProfilePosition>

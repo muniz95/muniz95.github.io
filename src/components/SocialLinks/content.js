@@ -4,12 +4,8 @@ const links = [
     url: 'https://github.com/muniz95'
   },
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/muniz95'
-  },
-  {
-    label: 'Linkedin',
-    url: 'https://br.linkedin.com/in/muniz95'
+    label: 'Soundcloud',
+    url: 'https://soundcloud.com/muniz95'
   }
 ]
 

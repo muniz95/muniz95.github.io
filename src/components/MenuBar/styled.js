@@ -17,16 +17,34 @@ export const MenuBarWrapper = styled.aside`
   position: fixed;
   right: 0;
   width: 3.75rem;
-  transition: ${transitions.DEFAULT};
+  transition: ${transitions.ALL};
 
   ${media.lessThan('large')`
+    border: 0;
     border-top: 1px solid var(--borders);
-    bottom: 0;
+    bottom: -3px;
     flex-direction: row;
     height: auto;
     padding: 0;
+    padding-bottom: env(safe-area-inset-bottom);
     position: fixed;
     width: 100%;
+  `}
+`
+
+export const MenuBarGroupDesktop = styled.div`
+  display: block;
+
+  ${media.lessThan('large')`
+    display: none;
+  `}
+`
+
+export const MenuBarGroupMobile = styled.div`
+  display: none;
+
+  ${media.lessThan('large')`
+    display: block;
   `}
 `
 
@@ -49,6 +67,10 @@ export const MenuBarLink = styled(AniLink)`
   }
 `
 
+export const MenuBarExternalLink = styled.a`
+  display: block;
+`
+
 export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;
@@ -58,6 +80,10 @@ export const MenuBarItem = styled.span`
   position: relative;
   width: 3.75rem;
   transition: ${transitions.COLOR};
+
+  svg {
+    vertical-align: middle;
+  }
 
   &.light {
     color: #d4d400;

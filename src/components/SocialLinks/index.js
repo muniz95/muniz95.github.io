@@ -1,5 +1,5 @@
 import React from 'react'
-// import ReactGA from 'react-ga'
+import ReactGA from 'react-ga'
 
 import links from './content'
 import Icons from './Icons'
@@ -7,11 +7,11 @@ import Icons from './Icons'
 import * as S from './styled'
 
 const socialLinkClickTrack = (social) => {
-  // ReactGA.event({
-  //   category: 'social link',
-  //   action: 'click',
-  //   label: social
-  // })
+  ReactGA.event({
+    category: 'social link',
+    action: 'click',
+    label: social
+  })
 }
 
 

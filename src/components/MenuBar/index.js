@@ -1,36 +1,37 @@
 import React, { useState, useEffect } from 'react'
 
-import { Home } from 'styled-icons/boxicons-solid/Home'
-import { SearchAlt2 as Search } from 'styled-icons/boxicons-regular/SearchAlt2'
-import { UpArrowAlt as Arrow } from 'styled-icons/boxicons-regular/UpArrowAlt'
-import { Lightbulb as Light } from 'styled-icons/typicons/Lightbulb'
-import { ThList } from 'styled-icons/typicons/ThList'
-import { Grid } from 'styled-icons/boxicons-solid/Grid'
+import { Home } from '@styled-icons/boxicons-solid/Home'
+import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
+import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
+import { Youtube } from '@styled-icons/boxicons-logos/Youtube'
+import { LightBulb as Light } from '@styled-icons/entypo/LightBulb'
+import { GraduationCap } from '@styled-icons/fa-solid/GraduationCap'
+import { Menu } from '@styled-icons/boxicons-regular/Menu'
 
 import getThemeColor from '../../utils/getThemeColor'
 
 import * as S from './styled'
 import * as GA from './trackers'
 
-const MenuBar = () => {
+const MenuBar = ({ setIsMenuOpen, isMenuOpen }) => {
   const [theme, setTheme] = useState(null)
-  const [display, setDisplay] = useState(null)
 
   const isDarkMode = theme === 'dark'
-  const isListMode = display === 'list'
 
-  if (theme !== null && display !== null) {
+  if (theme !== null) {
     GA.themeTracker(theme)
-    GA.displayTracker(display)
   }
 
   useEffect(() => {
     setTheme(window.__theme)
-    setDisplay(window.__display)
 
     window.__onThemeChange = () => setTheme(window.__theme)
-    window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
+
+  const openMenu = () => {
+    GA.menuTracker()
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   return (
     <S.MenuBarWrapper>
@@ -61,6 +62,14 @@ const MenuBar = () => {
         </S.MenuBarLink>
       </S.MenuBarGroup>
 
+      <S.MenuBarGroupMobile>
+        <S.MenuBarGroup>
+          <S.MenuBarItem title="Abrir Menu" onClick={openMenu}>
+            <Menu />
+          </S.MenuBarItem>
+        </S.MenuBarGroup>
+      </S.MenuBarGroupMobile>
+
       <S.MenuBarGroup>
         <S.MenuBarItem
           title="Mudar o Tema"
@@ -79,15 +88,6 @@ const MenuBar = () => {
           isDarkMode={isDarkMode}
         >
           <Light />
-        </S.MenuBarItem>
-        <S.MenuBarItem
-          title="Mudar visualização"
-          onClick={() => {
-            window.__setPreferredDisplay(isListMode ? 'card' : 'list')
-          }}
-          className="display"
-        >
-          {!isListMode ? <ThList /> : <Grid />}
         </S.MenuBarItem>
         <S.MenuBarItem
           title="Ir para o Topo"

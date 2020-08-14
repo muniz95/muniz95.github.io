@@ -14,28 +14,23 @@ export const SidebarContainer = styled.aside`
   padding: 2rem;
   text-align: center;
   width: 20rem;
-  z-index: 9999;
-  transition: ${transitions.DEFAULT};
+  transition: ${transitions.ALL};
 
   ${media.lessThan('large')`
     align-items: flex-start;
-    height: auto;
-    padding: 1rem;
+    border: 0;
+    height: calc(100% - 50px);
+    padding: 0;
     position: inherit;
     width: 100%;
+    transform: ${props =>
+      props.isMenuOpen ? 'translateX(0)' : 'translateX(-100vw)'};
   `}
+`
 
-  p {
-    color: var(--texts);
-  }
-
-  a {
-    color: var(--texts);
-    text-decoration: none;
-    transition: ${transitions.COLOR};
-
-    &:hover {
-      color: var(--highlight);
-    }
-  }
+export const SidebarLinksContainer = styled.section`
+  width: 100%;
+  height: calc(100% - 70px);
+  display: flex;
+  flex-direction: column;
 `

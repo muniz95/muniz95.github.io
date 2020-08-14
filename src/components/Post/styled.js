@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-import transitions from '../../styles/transitions';
+import transitions from '../../styles/transitions'
 
 export const PostWrapper = styled.section`
   align-items: center;
@@ -10,15 +10,7 @@ export const PostWrapper = styled.section`
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
-
-  &:not(.disableCard) {
-    body#card & {
-      border: none;
-      padding: 2rem 1rem;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
+  transition: ${transitions.ALL};
 
   ${media.lessThan('large')`
     align-items: flex-start;
@@ -32,10 +24,6 @@ export const PostLink = styled(AniLink)`
   display: flex;
   text-decoration: none;
   transition: ${transitions.COLOR};
-
-  body#card & {
-    background-color: var(--background);
-  }
 
   &:hover {
     color: var(--highlight);
@@ -54,10 +42,6 @@ export const PostTag = styled.div`
   min-height: 90px;
   min-width: 90px;
   text-transform: uppercase;
-
-  body#card & {
-    margin-bottom: 1.5rem;
-  }
 
   ${media.lessThan('large')`
     border-radius: 0;
@@ -92,10 +76,6 @@ export const PostTag = styled.div`
   &.is-jekyll {
     background: #b31917;
   }
-
-  &.is-dart {
-    background: #025697;
-  }
 `
 
 export const PostInfo = styled.div`
@@ -116,11 +96,6 @@ export const PostTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
-
-  body#card & {
-    line-height: 1.1;
-    margin: 0.8rem 0;
-  }
 `
 
 export const PostDescription = styled.h2`

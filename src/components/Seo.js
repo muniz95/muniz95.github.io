@@ -7,7 +7,7 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, title, image }) {
@@ -40,7 +40,7 @@ function SEO({ description, lang, meta, title, image }) {
       meta={[
         {
           name: `aplication-name`,
-          content: 'muniz95 blog'
+          content: 'Rodrigo Muniz Blog'
         },
         {
           name: `description`,
@@ -90,8 +90,7 @@ function SEO({ description, lang, meta, title, image }) {
 SEO.defaultProps = {
   lang: `pt-br`,
   meta: [],
-  description: ``,
-  defaultImage: 'https://muniz95.com.br/assets/img/blog-image.png'
+  description: ``
 }
 
 SEO.propTypes = {

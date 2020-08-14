@@ -21,7 +21,14 @@ const pluginConfig = [
     options: {
       plugins: [
         {
-          resolve: 'gatsby-remark-relative-images',
+          resolve: '@weknow/gatsby-remark-codepen',
+          options: {
+            theme: 'dark',
+            height: 400
+          }
+        },
+        {
+          resolve: 'gatsby-remark-relative-images-v2',
           options: {
             name: 'uploads'
           }
@@ -59,13 +66,13 @@ const pluginConfig = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Rodrigo Muniz`,
+      name: `Rodrigo Muniz Blog`,
       short_name: `muniz95`,
       start_url: `/`,
       background_color: `#1C2938`,
       theme_color: `#1C2938`,
-      icon: `src/images/icon.png`,
-      display: `minimal-ui`
+      display: `minimal-ui`,
+      icon: `static/assets/img/muniz95-icon.png`
     }
   },
   `gatsby-plugin-styled-components`,
@@ -78,12 +85,6 @@ const pluginConfig = [
   },
   `gatsby-plugin-netlify-cms`,
   `gatsby-plugin-netlify`,
-  {
-    resolve: 'gatsby-plugin-netlify-cache',
-    options: {
-      cachePublic: true
-    }
-  },
   {
     resolve: `gatsby-plugin-feed`,
     options: {
@@ -125,14 +126,14 @@ const pluginConfig = [
                       description
                       date
                     }
-                    excerpt(truncate: true, pruneLength: 500, format: HTML)
+                    excerpt
                   }
                 }
               }
             }
           `,
           output: '/feed.xml',
-          title: 'muniz95 blog - RSS Feed'
+          title: 'Rodrigo Muniz Blog - RSS Feed'
         }
       ]
     }
@@ -153,15 +154,24 @@ if (process.env.CONTEXT === 'production') {
     }
   }
 
+  const analytics = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      head: false
+    }
+  }
+
   pluginConfig.push(algolia)
+  pluginConfig.push(analytics)
 }
 
 module.exports = {
   siteMetadata: {
     title: `Rodrigo Muniz`,
-    position: 'Desenvolvedor Fullstack',
-    description: `Um blog sobre um pouco de tudo: programação, desenvolvimento web, mobile, ideias aleatórias e bobagens em geral.`,
-    authorDescription: `Desenvolvedor fullstack durante o dia, e durante a noite também às vezes.`,
+    position: 'Desenvolvedor Front End',
+    description: `Um blog de um desenvolvedor hora front, hora back (vulgo fullstack).`,
+    authorDescription: `Desenvolvedor fullstack, escrevo sobre programação, música, coisas do dia a dia e o que mais surgir de assunto.`,
     author: `@muniz95`,
     siteUrl: 'https://muniz95.com.br'
   },

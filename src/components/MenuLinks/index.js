@@ -1,21 +1,23 @@
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-// import ReactGA from 'react-ga'
+import ReactGA from 'react-ga'
 
 import links from './content'
 import * as S from './styled'
 
 import getThemeColor from '../../utils/getThemeColor'
 
-const menuLinkClickTrack = link => {
-  // ReactGA.event({
-  //   category: 'menu link',
-  //   action: 'click',
-  //   label: `Menu Link - ${link}`
-  // })
-}
+const MenuLinks = ({ setIsMenuOpen, isMenuOpen }) => {
+  const menuLinkClickTrack = link => {
+    setIsMenuOpen(!isMenuOpen)
 
-const MenuLinks = () => {
+    ReactGA.event({
+      category: 'menu link',
+      action: 'click',
+      label: `Menu Link - ${link}`
+    })
+  }
+
   return (
     <S.MenuLinksWrapper>
       <S.MenuLinksList>

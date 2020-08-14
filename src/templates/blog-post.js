@@ -51,6 +51,7 @@ export const query = graphql`
       }
       frontmatter {
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        image
         description
         title
       }

@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import algoliasearch from 'algoliasearch/lite'
+
 import {
   InstantSearch,
   SearchBox,
@@ -12,24 +14,30 @@ import {
 import Hit from './Hit'
 import * as S from './styled'
 
-const Search = props => {
-  const { algolia } = props
+const Search = (props) => {
+  const searchClient = algoliasearch(
+    props.algolia.appId,
+    props.algolia.searchOnlyApiKey
+  )
 
   return (
     <S.SearchWrapper>
-      {algolia && algolia.appId && (
+      {props.algolia && props.algolia.appId && (
         <>
           <InstantSearch
-            appId={algolia.appId}
-            apiKey={algolia.searchOnlyApiKey}
-            indexName={algolia.indexName}
+            searchClient={searchClient}
+            indexName={props.algolia.indexName}
           >
             <Configure hitsPerPage={200} distinct />
-            <SearchBox translations={{ placeholder: 'Pesquisar...' }} />
+            <SearchBox
+              translations={{ placeholder: 'Pesquisar...' }}
+            />
             <Stats
               translations={{
                 stats(nbHits, timeSpentMS) {
-                  return `${nbHits} resultados encontrados em ${timeSpentMS}ms`
+                  return nbHits === 1
+                    ? `${nbHits} resultado encontrado em ${timeSpentMS}ms`
+                    : `${nbHits} resultados encontrados em ${timeSpentMS}ms`
                 }
               }}
             />

@@ -10,7 +10,11 @@ export default class HTML extends React.Component {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no"
+          />
+          <meta
+            name="google-site-verification"
+            content="8kDtWUmUQEh7QXoj_shRaxcgYAVpHs_YQ7TeniN0kmI"
           />
           {this.props.headComponents}
         </head>
@@ -38,26 +42,6 @@ export default class HTML extends React.Component {
                 }
 
                 setTheme(preferredTheme || 'dark');
-
-                window.__onDisplayChange = function() {};
-                function setDisplay(newDisplay) {
-                  window.__display = newDisplay;
-                  preferredDisplay = newDisplay;
-                  document.body.id = newDisplay;
-                  window.__onDisplayChange(newDisplay);
-                }
-                var preferredDisplay;
-                try {
-                  preferredDisplay = localStorage.getItem('display');
-                } catch (err) { }
-                window.__setPreferredDisplay = function(newDisplay) {
-                  setDisplay(newDisplay);
-                  try {
-                    localStorage.setItem('display', newDisplay);
-                  } catch (err) {}
-                }
-
-                setDisplay(preferredDisplay || 'list');
               })();
             `
             }}

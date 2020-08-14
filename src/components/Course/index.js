@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import ReactGA from 'react-ga'
+import ReactGA from 'react-ga'
 
 import Image from './Image'
 import * as S from './styled'
 
 const courseClickTrack = course => {
-  // ReactGA.event({
-  //   category: 'cursos',
-  //   action: 'click',
-  //   label: `Link Curso - ${course}`
-  // })
+  ReactGA.event({
+    category: 'cursos',
+    action: 'click',
+    label: `Link Curso - ${course}`
+  })
 }
 
 const Course = ({ title, description, link, image }) => {
