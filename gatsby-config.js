@@ -69,8 +69,8 @@ const pluginConfig = [
       name: `Rodrigo Muniz Blog`,
       short_name: `muniz95`,
       start_url: `/`,
-      background_color: `#1C2938`,
-      theme_color: `#1C2938`,
+      background_color: `#151c15`,
+      theme_color: `#151c15`,
       display: `minimal-ui`,
       icon: `static/assets/img/muniz95-icon.png`
     }
