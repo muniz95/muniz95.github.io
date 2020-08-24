@@ -76,6 +76,10 @@ export const PostTag = styled.div`
   &.is-jekyll {
     background: #b31917;
   }
+
+  &.is-dart {
+    background: #025697;
+  }
 `
 
 export const PostInfo = styled.div`
